@@ -13,26 +13,26 @@
     <header class="page-header">
         <div class="container main-nav">
             <nav class="main-nav">
-                <a href="" class="logo main-nav"><span class="accent">Web</span>Studio</a>
-                <ul class="site-nav main-nav">
-                    <li class="item"><a href="" class="link current">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                    <li class="item"><a href="" class="link">Контакты</a></li>
+                <a href="" class="main-nav__logo"><span class="main-nav__accent">Web</span>Studio</a>
+                <ul class="site-nav">
+                    <li class="site-nav__item"><a href="" class="site-nav__link current">Студия</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
                 </ul>
             </nav>
-                <ul class="contact-nav main-nav">
-                    <li class="item">
-                        <a href="mailto:info@devstudio.com" class="contact">
-                            <svg class="icon-contact" width="16" height="12">
+                <ul class="contact-nav">
+                    <li class="contact-nav__item">
+                        <a href="mailto:info@devstudio.com" class="contact-nav__contact">
+                            <svg class="contact-nav__icon" width="16" height="12">
                                 <use href="/goit-markup-hw-04/images/sprite.svg#envelope"></use>
                             </svg>
                             info@devstudio.com
                         </a>
                     </li>
 
-                    <li class="item">
-                        <a href="tel:+380961111111" class="contact">
-                            <svg class="icon-contact" width="10" height="16">
+                    <li class="contact-nav__item">
+                        <a href="tel:+380961111111" class="contact-nav__contact">
+                            <svg class="contact-nav__icon" width="10" height="16">
                                 <use href="/goit-markup-hw-04/images/sprite.svg#smartphone"></use>
                             </svg>
                             +38 096 111 11 11
@@ -46,52 +46,49 @@
     <main>
         <div>
             <section class="hero">
-                <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                <button class="button primary" type="button" data-modal-open>Заказать услугу</button>
-
-
-
+                <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
+                <button class="button hero__button" type="button" data-modal-open>Заказать услугу</button>
             </section>
         </div>
 
         <section class="section">
             <div class="container">
                 <ul class="feature-list">
-                    <li class="item icon-antenna">
-                        <div class="icon">
+                    <li class="feature-list__item">
+                        <div class="feature-list__icon">
                             <svg height="70" width="70">
                                 <use href="images/sprite.svg#antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="title">Внимание к деталям</h3>
-                        <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                        <h3 class="feature-list__title">Внимание к деталям</h3>
+                        <p class="feature-list__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li class="item icon-clock">
-                        <div class="icon">
+                    <li class="feature-list__item">
+                        <div class="feature-list__icon">
                             <svg height="70" width="70">
                                 <use href="images/sprite.svg#clock"></use>
                             </svg>
                         </div>
-                        <h3 class="title">Пунктуальность</h3>
-                        <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                        <h3 class="feature-list__title">Пунктуальность</h3>
+                        <p class="feature-list__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li class="item icon-diagram">
-                        <div class="icon">
+                    <li class="feature-list__item">
+                        <div class="feature-list__icon">
                             <svg height="70" width="70">
                                 <use href="images/sprite.svg#diagram"></use>
                             </svg>
                         </div>
-                        <h3 class="title">Планирование</h3>
-                        <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                        <h3 class="feature-list__title">Планирование</h3>
+                        <p class="feature-list__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li class="item icon-astronaut">
-                        <div class="icon">
+                    <li class="feature-list__item">
+                        <div class="feature-list__icon">
                             <svg height="70" width="70">
                                 <use href="images/sprite.svg#astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="title">Современные технологии</h3>
-                        <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                        <h3 class="feature-list__title">Современные технологии</h3>
+                        <p class="feature-list__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
                 </ul>
             </div>
@@ -103,24 +100,24 @@
                 <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="work-list">
                 
-                <li class="item">
+                <li class="work-list__item">
                     <img src="./images/photo1.jpg" alt="компьютер" width="370">
-                    <div class="work-text-cont"> 
-                        <p class="work-text">Десктопные приложения </p> 
+                    <div class="work-list__cont"> 
+                        <p class="work-list__text">Десктопные приложения </p> 
                     </div>
                 </li>
                 
-                <li class="item">
+                <li class="work-list__item">
                     <img src="./images/photo2.jpg" alt="смартфон" width="370">
-                    <div class="work-text-cont"> 
-                        <p class="work-text">Мобильные приложения </p> 
+                    <div class="work-list__cont"> 
+                        <p class="work-list__text">Мобильные приложения </p> 
                     </div>
                 </li>
                 
-                <li class="item">
+                <li class="work-list__item">
                     <img src="./images/photo3.jpg" alt="планшет" width="370">
-                    <div class="work-text-cont"> 
-                        <p class="work-text">Дизайнерские решения </p> 
+                    <div class="work-list__cont"> 
+                        <p class="work-list__text">Дизайнерские решения </p> 
                     </div>
                 </li>
             </ul>
@@ -132,11 +129,11 @@
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team-list">             
-                    <li class="item"> 
+                    <li class="team-list__item"> 
                         <img src="./images/photo4.jpg" alt="Игорь Демьяненко" width="270"> 
                         <div class="team-content">
-                            <h3 class="title">Игорь Демьяненко</h3>
-                            <p class="text">Product Designer</p>
+                            <h3 class="team-list__title">Игорь Демьяненко</h3>
+                            <p class="team-list__text">Product Designer</p>
                             <ul class="social social-team">
                                 <li>
                                     <a href="https://www.instagram.com" class="team-link">
@@ -172,11 +169,11 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="item">
+                    <li class="team-list__item">
                         <img src="./images/photo5.jpg" alt="Ольга Репина" width="270">
                         <div class="team-content"> 
-                            <h3 class="title">Ольга Репина</h3> 
-                            <p class="text">Frontend Developer</p> 
+                            <h3 class="team-list__title">Ольга Репина</h3> 
+                            <p class="team-list__text">Frontend Developer</p> 
                             <ul class="social social-team">
                                 <li>
                                     <a href="https://www.instagram.com" class="team-link">
@@ -212,11 +209,11 @@
                             </ul>                       
                         </div>  
                         </li>
-                    <li class="item">
+                    <li class="team-list__item">
                         <img src="./images/photo6.jpg" alt="Николай Тарасов" width="270">
                         <div class="team-content">
-                            <h3 class="title">Николай Тарасов</h3> 
-                            <p class="text">Marketing</p>
+                            <h3 class="team-list__title">Николай Тарасов</h3> 
+                            <p class="team-list__text">Marketing</p>
                             <ul class="social social-team">
                                 <li>
                                     <a href="https://www.instagram.com" class="team-link">
@@ -252,11 +249,11 @@
                             </ul>
                         </div>  
                     </li>
-                    <li class="item">
+                    <li class="team-list__item">
                         <img src="./images/photo7.jpg" alt="Михаил Ермаков" width="270">
                         <div class="team-content">
-                            <h3 class="title">Михаил Ермаков</h3> 
-                            <p class="text">UI Designer</p>
+                            <h3 class="team-list__title">Михаил Ермаков</h3> 
+                            <p class="team-list__text">UI Designer</p>
                             <ul class="social social-team">
                                 <li>
                                     <a href="https://www.instagram.com" class="team-link">
@@ -348,9 +345,9 @@
     </main>
     <footer class="footer">
         <div class="container footer-container">
-            <div class="container-adress">
+            <div class="footer__adress">
                 <div>
-                    <a class="logo" href=""><span class="accent">Web</span>Studio</a>
+                    <a class="footer__logo" href=""><span class="footer__accent">Web</span>Studio</a>
                     <address>
                         <ul class="contact-footer">
                             <li class="item"><a href="https://goo.gl/maps/sERGqYDvzHYtQd6Q8" target="_blank" class="actual-address">г. Киев, пр-т Леси Украинки, 26</a></li>
