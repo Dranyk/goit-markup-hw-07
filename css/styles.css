@@ -226,34 +226,34 @@ address {
     width: 1200px;
 }
 
-.actual-address {
+.footer__actual-address {
     color: white;
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
 }
 
-.contact {
+.footer__contact {
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
 }
 
-.contact-footer .item + .item {
+.footer__contact-list .footer__item + .footer__item {
     margin-top: 9px;
 }
 
-.contact-footer a {
+.footer__contact-list a {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-footer a:hover,
-.contact-footer a:focus {
+.footer__contact-list a:hover,
+.footer__contact-list a:focus {
     color: var(--accent-color);
     }
 
-.join > .text {
+.join__text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.16;
@@ -266,11 +266,11 @@ address {
     margin-left: 70px;
 }
 
-.join-icon {
+.join__icon {
     fill: currentColor;
 }
 
-.join-link {
+.join__link {
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -285,29 +285,29 @@ address {
 
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social .join-item:not(:last-child) {
+.join__item:not(:last-child) {
     width: calc((100% - 3 * 10px) / 4);
     margin-right: 10px;
 }
 
 
-.join-link:hover,
-.join-link:focus {
+.join__link:hover,
+.join__link:focus {
     background-color: var(--accent-color);
     color: #fff;
 }
 
-.footer .subscription {
+.subscription {
     width: 570px;
 }
 
-.subscription .form {
+.subscription__form {
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-.subscription .join-in {
+.subscription__join-in {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -316,7 +316,7 @@ address {
     margin-bottom: 20px;
 }
 
-.join-mail {
+.subscription__mail {
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -327,7 +327,7 @@ address {
     color: var(--primary-text-color);
 }
 
-.subscription .button {
+.subscription__button {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -345,7 +345,7 @@ address {
     border: 0em;
 }
 
-.icon-send {
+.subscription__icon {
     position: absolute;
     right: 18px;
     margin-left: 10px;
@@ -555,7 +555,7 @@ address {
     margin-right: 10px;
 }
 
-.team-link {
+.social-team__link {
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -570,11 +570,11 @@ address {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-icon {
+.social-team__icon {
     fill: currentColor;
 }
 
-.team-link:hover,
+.social-team__link:hover,
 .team-link:focus {
     background-color: var(--accent-color);
     color: #fff;
@@ -590,11 +590,11 @@ address {
     display: flex;
 }
 
-.client-list .client-item:not(:last-child) {
+.client-list .client-list__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.client-link {
+.client-list__link {
     color: #AFB1B8;
     display: flex;
     justify-content: center;
@@ -607,12 +607,12 @@ address {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-icon {
+.client-list__icon {
     fill: currentColor;
 }
 
-.client-link:hover,
-.client-link:focus {
+.client-list__link:hover,
+.client-list__link:focus {
     border-color: var(--accent-color);
     color: var(--accent-color);
 }
@@ -818,6 +818,7 @@ label {
     color: var(--title-text-color);
 
     margin-bottom: 30px;
+    margin-top: 0;
 }
 
 .backdrop .form-field:nth-child(-n + 4) {
@@ -847,8 +848,8 @@ label {
 
 .form-field .form-label {
     color: var(--primary-text-color);
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.01em;
     position: absolute;
     top: 50%;
@@ -878,7 +879,14 @@ label {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-  
+.form-comment::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+}
+    
 .checkbox {
     appearance: none;
     -moz-appearance: none;
