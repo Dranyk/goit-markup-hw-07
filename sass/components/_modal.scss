@@ -39,12 +39,7 @@ label {
     background-color: #fff;
 }
 
-.close-button:hover,
-.close-button:focus {
-    fill: var(--accent-color);
-}
-
-.close-button {
+.modal__close-button {
     padding: 0;
     margin: 0;
     @extend %align-list;
@@ -59,9 +54,14 @@ label {
     z-index: 1;
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        }
 }
 
-.close-icon {
+.modal__close-icon {
     @extend %align-list;
     justify-content: center;
     padding: 0;
@@ -71,7 +71,7 @@ label {
     height: 18px;
 }
 
-.description {
+.modal__description {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -83,16 +83,16 @@ label {
     margin-top: 0;
 }
 
-.backdrop .form-field:nth-child(-n + 4) {
+.modal__form-field:nth-child(-n + 4) {
     margin-bottom: 28px;
 }
 
-.backdrop .form-field {
+.modal__form-field {
     display: block;
     position: relative;
 }
 
-.backdrop .form-input {
+.modal__form-input {
     width: 100%;
     height: 38px;
     display: block;
@@ -108,7 +108,7 @@ label {
     box-sizing: border-box;
 }
 
-.form-field .form-label {
+.modal__form-label {
     color: var(--primary-text-color);
     font-size: 12px;
     line-height: 1.16;
@@ -119,7 +119,7 @@ label {
     transform: translateY(-40px);
 }
 
-.form-icon {
+.modal__form-icon {
     position: absolute;
     top: 50%;
     left: 10px;
@@ -129,19 +129,19 @@ label {
     color: var(--title-text-color);
 }
 
-.comment {
+.modal__comment {
     margin-bottom: 20px;
     height: 120px;
 }
 
-.comment .form-label {
+.modal__form-label {
     position: absolute;
     top: 20px;
     left: 0px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-comment::placeholder {
+.modal__form-comment::placeholder {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
@@ -149,7 +149,7 @@ label {
     color: rgba(117, 117, 117, 0.5);
 }
     
-.checkbox {
+.modal__checkbox {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -159,16 +159,16 @@ label {
     margin-right: 7px;
 }
 
-.icon-checkbox {
+.modal__icon-checkbox {
     margin-right: 7px;
 }
 
-.field-polisy.check {
-display: flex;
-justify-content: center;
+.modal__field-polisy.check {
+    display: flex;
+    justify-content: center;
 }
 
-.field-polisy .icon-checkbox {
+.modal__icon-checkbox {
     display: inline-block;
     width: 16px;
     height: 15px;
@@ -178,7 +178,7 @@ justify-content: center;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox:checked + .icon-checkbox {
+.modal__checkbox:checked + .modal__icon-checkbox {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
     background-image: url(../images/icon-check.svg);
@@ -189,24 +189,24 @@ justify-content: center;
   
 
 
-.checkbox-link {
+.modal__checkbox-link {
     color: var(--accent-color);
     text-decoration: underline;
 }
 
-.field-polisy {
+.modal__field-polisy {
     @extend %align-list;
     margin-bottom: 30px;
 }
 
-.checkbox-policy {
+.modal__checkbox-policy {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
 
-.form-field:focus-within > .form-icon {
+.modal__form-field:focus-within > .modal__form-icon {
     fill: var(--accent-color);
 }
 
@@ -222,29 +222,23 @@ justify-content: center;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
+
+    &:focus {
+        border: 1px solid var(--accent-color);
+    }
 }
 
-.backdrop textarea:focus {
-    border: 1px solid var(--accent-color);
-}
-
-.backdrop .button-submit {
+.modal__button-submit {
     display: flex;
     justify-content: center;
 }
 
-.button-submit>.button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-}
-
 .backdrop .button {
     border: none;
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba (0, 0, 0, 0.15);
     display: inline-block;
     vertical-align: middle;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     text-decoration: none;

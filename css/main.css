@@ -38,7 +38,7 @@ body {
   margin-top: 0;
   margin-bottom: 50px;
   color: var(--title-text-color);
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -49,7 +49,7 @@ button {
   cursor: pointer;
 }
 
-.subscription__button, .join__link, .field-polisy, .close-icon, .close-button, .client-list__link, .social-team__link, .work-list__cont, .feature-list__icon, .contact-nav__contact, .main-nav {
+.main-nav, .contact-nav__contact, .feature-list__icon, .work-list__cont, .social-team__link, .client-list__link, .modal__close-button, .modal__close-icon, .modal__field-polisy, .join__link, .subscription__button {
   display: flex;
   align-items: center;
 }
@@ -102,8 +102,7 @@ nav {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav__link:hover,
-.site-nav__link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-color);
 }
 
@@ -127,15 +126,14 @@ nav {
   text-decoration: none;
 }
 
+.contact-nav__contact:hover, .contact-nav__contact:focus {
+  color: var(--accent-color);
+}
+
 .contact-nav__icon {
   fill: currentColor;
   margin-right: 10px;
   padding-top: 2px;
-}
-
-.contact-nav__contact:hover,
-.contact-nav__contact:focus {
-  color: var(--accent-color);
 }
 
 .main-nav__logo {
@@ -346,12 +344,11 @@ nav {
 }
 
 .social-team > li:not(:last-child) {
-  width: calc((100% - 30px) / 4);
+  width: calc((100% - 3 * 10px) / 4);
   margin-right: 10px;
 }
 
 .social-team__link {
-  cursor: pointer;
   justify-content: center;
   padding: 0;
   border: none;
@@ -362,14 +359,13 @@ nav {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-team__icon {
-  fill: currentColor;
-}
-
-.social-team__link:hover,
-.team-link:focus {
+.social-team__link:hover, .social-team__link:focus {
   background-color: var(--accent-color);
   color: #fff;
+}
+
+.social-team__icon {
+  fill: currentColor;
 }
 
 .client {
@@ -394,14 +390,13 @@ nav {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-list__icon {
-  fill: currentColor;
-}
-
-.client-list__link:hover,
-.client-list__link:focus {
+.client-list__link:hover, .client-list__link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
+}
+
+.client-list__icon {
+  fill: currentColor;
 }
 
 .portfolio {
@@ -413,6 +408,7 @@ nav {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
 }
+
 .filter-section button:hover, .filter-section button:focus {
   color: white;
   background-color: var(--accent-color);
@@ -440,6 +436,7 @@ nav {
   border-top: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .portfolio-list__grid:hover, .portfolio-list__grid:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -498,7 +495,9 @@ nav {
   color: var(--primary-text-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-list__grid-link:hover .portfolio-list__card-desc, .portfolio-list__grid-link:focus .portfolio-list__card-desc {
+
+.portfolio-list__grid-link:hover .portfolio-list__card-desc,
+.portfolio-list__grid-link:focus .portfolio-list__card-desc {
   transform: translateY(0px);
 }
 
@@ -545,12 +544,7 @@ label {
   background-color: #fff;
 }
 
-.close-button:hover,
-.close-button:focus {
-  fill: var(--accent-color);
-}
-
-.close-button {
+.modal__close-button {
   padding: 0;
   margin: 0;
   justify-content: center;
@@ -566,7 +560,11 @@ label {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-icon {
+.modal__close-button:hover, .modal__close-button:focus {
+  fill: var(--accent-color);
+}
+
+.modal__close-icon {
   justify-content: center;
   padding: 0;
   border: none;
@@ -575,7 +573,7 @@ label {
   height: 18px;
 }
 
-.description {
+.modal__description {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -585,16 +583,16 @@ label {
   margin-top: 0;
 }
 
-.backdrop .form-field:nth-child(-n+4) {
+.modal__form-field:nth-child(-n + 4) {
   margin-bottom: 28px;
 }
 
-.backdrop .form-field {
+.modal__form-field {
   display: block;
   position: relative;
 }
 
-.backdrop .form-input {
+.modal__form-input {
   width: 100%;
   height: 38px;
   display: block;
@@ -610,7 +608,7 @@ label {
   box-sizing: border-box;
 }
 
-.form-field .form-label {
+.modal__form-label {
   color: var(--primary-text-color);
   font-size: 12px;
   line-height: 1.16;
@@ -621,7 +619,7 @@ label {
   transform: translateY(-40px);
 }
 
-.form-icon {
+.modal__form-icon {
   position: absolute;
   top: 50%;
   left: 10px;
@@ -631,40 +629,26 @@ label {
   color: var(--title-text-color);
 }
 
-.comment {
+.modal__comment {
   margin-bottom: 20px;
   height: 120px;
 }
 
-.comment .form-label {
+.modal__form-label {
   position: absolute;
   top: 20px;
   left: 0px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-comment::-moz-placeholder {
+.modal__form-comment::placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-comment:-ms-input-placeholder {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.form-comment::placeholder {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.checkbox {
+.modal__checkbox {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -672,16 +656,16 @@ label {
   margin-right: 7px;
 }
 
-.icon-checkbox {
+.modal__icon-checkbox {
   margin-right: 7px;
 }
 
-.field-polisy.check {
+.modal__field-polisy.check {
   display: flex;
   justify-content: center;
 }
 
-.field-polisy .icon-checkbox {
+.modal__icon-checkbox {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -691,7 +675,7 @@ label {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox:checked + .icon-checkbox {
+.modal__checkbox:checked + .modal__icon-checkbox {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   background-image: url(../images/icon-check.svg);
@@ -700,23 +684,23 @@ label {
   background-repeat: no-repeat;
 }
 
-.checkbox-link {
+.modal__checkbox-link {
   color: var(--accent-color);
   text-decoration: underline;
 }
 
-.field-polisy {
+.modal__field-polisy {
   margin-bottom: 30px;
 }
 
-.checkbox-policy {
+.modal__checkbox-policy {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
-.form-field:focus-within > .form-icon {
+.modal__form-field:focus-within > .modal__form-icon {
   fill: var(--accent-color);
 }
 
@@ -738,23 +722,17 @@ label {
   border: 1px solid var(--accent-color);
 }
 
-.backdrop .button-submit {
+.modal__button-submit {
   display: flex;
   justify-content: center;
 }
 
-.button-submit > .button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-}
-
 .backdrop .button {
   border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba 0, 0, 0, 0.15;
   display: inline-block;
   vertical-align: middle;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   text-decoration: none;
@@ -808,8 +786,7 @@ address {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__contact-list a:hover,
-.footer__contact-list a:focus {
+.footer__contact-list a:hover, .footer__contact-list a:focus {
   color: var(--accent-color);
 }
 
@@ -831,7 +808,6 @@ address {
 }
 
 .join__link {
-  cursor: pointer;
   justify-content: center;
   padding: 0;
   border: none;
@@ -843,15 +819,14 @@ address {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.join__item:not(:last-child) {
-  width: calc((100% - 30px) / 4);
-  margin-right: 10px;
-}
-
-.join__link:hover,
-.join__link:focus {
+.join__link:hover, .join__link:focus {
   background-color: var(--accent-color);
   color: #fff;
+}
+
+.join__item:not(:last-child) {
+  width: calc((100% - 3 * 10px) / 4);
+  margin-right: 10px;
 }
 
 .subscription {
@@ -906,4 +881,5 @@ address {
   margin-left: 10px;
   top: 50%;
   transform: translatey(-50%);
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */

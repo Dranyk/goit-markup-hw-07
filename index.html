@@ -41,7 +41,6 @@
                 </ul>
         </div>
             
-        
     </header>
     <main>
         <div>
@@ -413,60 +412,60 @@
 
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button class="close-button" data-modal-close>
-            <svg class="close-icon" height="18" width="18">
+        <button class="modal__close-button" data-modal-close>
+            <svg class="modal__close-icon" height="18" width="18">
                 <use href="images/sprite.svg#close"></use>
             </svg>
         </button>
         <form class="form js-speaker-form">
-            <p class="description">Оставьте свои данные, мы Вам перезвоним</p>
+            <p class="modal__description">Оставьте свои данные, мы Вам перезвоним</p>
     
-            <label class="form-field">
-              <input type="name" class="form-input" name="name" placeholder=" " />
-              <span class="form-label">Имя</span>
-              <svg class="form-icon" width="18" height="18">
+            <label class="modal__form-field">
+              <input type="name" class="modal__form-input" name="name" placeholder=" " />
+              <span class="modal__form-label">Имя</span>
+              <svg class="modal__form-icon" width="18" height="18">
                 <use href="./images/icons.svg#name"></use>
               </svg>
             </label>
     
-            <label class="form-field">
-              <input type="tel" class="form-input" name="tel" placeholder=" " />
-              <span class="form-label">Телефон</span>
-              <svg class="form-icon" width="18" height="18">
+            <label class="modal__form-field">
+              <input type="tel" class="modal__form-input" name="tel" placeholder=" " />
+              <span class="modal__form-label">Телефон</span>
+              <svg class="modal__form-icon" width="18" height="18">
                 <use href="./images/icons.svg#phone-form"></use>
               </svg>
             </label>
     
-            <label class="form-field">
-              <input type="email" class="form-input" name="mail" id="mail" placeholder=" "/>
-              <span class="form-label">Почта</span>
-              <svg class="form-icon" width="18" height="18">
+            <label class="modal__form-field">
+              <input type="email" class="modal__form-input" name="mail" id="mail" placeholder=" "/>
+              <span class="modal__form-label">Почта</span>
+              <svg class="modal__form-icon" width="18" height="18">
                 <use href="./images/icons.svg#mail-form"></use>
               </svg>
             </label>
     
-            <label class="form-field comment">
-              <textarea class="form-comment" name="comment" rows="8" placeholder=" "
+            <label class="modal__form-field comment">
+              <textarea class="modal__form-comment" name="comment" rows="8" placeholder=" Введите текст "
               ></textarea>
-              <span class="form-label">Комментарий</span>
+              <span class="modal__form-label">Комментарий</span>
             </label>
     
-            <label class="field-polisy check">
+            <label class="modal__field-polisy check">
               <input
-                class="checkbox"
+                class="modal__checkbox"
                 type="checkbox"
                 name="policy"
                 value="accept policy"
               />
-              <span class="icon-checkbox"></span>
-              <span class="checkbox-policy"
+              <span class="modal__icon-checkbox"></span>
+              <span class="modal__checkbox-policy"
                 >Соглашаюсь с рассылкой и принимаю
-                <a class="checkbox-link" href="./index.html"
+                <a class="modal__checkbox-link" href="./index.html"
                   >Условия договора</a
                 ></span>
             </label>
     
-            <div class="button-submit">
+            <div class="modal__button-submit">
               <button type="submit" class="button">Отправить</button>
             </div>
 
