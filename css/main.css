@@ -49,7 +49,7 @@ button {
   cursor: pointer;
 }
 
-.main-nav, .contact-nav__contact, .feature-list__icon, .work-list__cont, .social-team__link, .client-list__link, .modal__close-button, .modal__close-icon, .modal__field-polisy, .join__link, .subscription__button {
+.subscription__button, .join__link, .modal__field-polisy, .modal__close-icon, .modal__close-button, .client-list__link, .social-team__link, .work-list__cont, .feature-list__icon, .contact-nav__contact, .main-nav {
   display: flex;
   align-items: center;
 }
@@ -101,7 +101,6 @@ nav {
   color: var(--title-text-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-color);
 }
@@ -125,7 +124,6 @@ nav {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-
 .contact-nav__contact:hover, .contact-nav__contact:focus {
   color: var(--accent-color);
 }
@@ -202,6 +200,7 @@ nav {
 .hero__button {
   min-width: 200px;
   padding: 10px 32px;
+  border: none;
   color: white;
   background-color: var(--accent-color);
   font-weight: 700;
@@ -344,7 +343,7 @@ nav {
 }
 
 .social-team > li:not(:last-child) {
-  width: calc((100% - 3 * 10px) / 4);
+  width: calc((100% - 30px) / 4);
   margin-right: 10px;
 }
 
@@ -358,7 +357,6 @@ nav {
   color: #AFB1B8;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .social-team__link:hover, .social-team__link:focus {
   background-color: var(--accent-color);
   color: #fff;
@@ -389,7 +387,6 @@ nav {
   border-radius: 4px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .client-list__link:hover, .client-list__link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
@@ -408,7 +405,6 @@ nav {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
 }
-
 .filter-section button:hover, .filter-section button:focus {
   color: white;
   background-color: var(--accent-color);
@@ -436,7 +432,6 @@ nav {
   border-top: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .portfolio-list__grid:hover, .portfolio-list__grid:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -495,9 +490,7 @@ nav {
   color: var(--primary-text-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-list__grid-link:hover .portfolio-list__card-desc,
-.portfolio-list__grid-link:focus .portfolio-list__card-desc {
+.portfolio-list__grid-link:hover .portfolio-list__card-desc, .portfolio-list__grid-link:focus .portfolio-list__card-desc {
   transform: translateY(0px);
 }
 
@@ -559,7 +552,6 @@ label {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal__close-button:hover, .modal__close-button:focus {
   fill: var(--accent-color);
 }
@@ -583,7 +575,7 @@ label {
   margin-top: 0;
 }
 
-.modal__form-field:nth-child(-n + 4) {
+.modal__form-field:nth-child(-n+4) {
   margin-bottom: 28px;
 }
 
@@ -717,7 +709,6 @@ label {
   border-radius: 4px;
   outline: none;
 }
-
 .backdrop textarea:focus {
   border: 1px solid var(--accent-color);
 }
@@ -785,7 +776,6 @@ address {
 .footer__contact-list a {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .footer__contact-list a:hover, .footer__contact-list a:focus {
   color: var(--accent-color);
 }
@@ -818,14 +808,13 @@ address {
   color: #fff;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .join__link:hover, .join__link:focus {
   background-color: var(--accent-color);
   color: #fff;
 }
 
 .join__item:not(:last-child) {
-  width: calc((100% - 3 * 10px) / 4);
+  width: calc((100% - 30px) / 4);
   margin-right: 10px;
 }
 
@@ -881,5 +870,4 @@ address {
   margin-left: 10px;
   top: 50%;
   transform: translatey(-50%);
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
