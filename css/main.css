@@ -15,14 +15,6 @@ ul {
   list-style: none;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 body {
   background-color: white;
   color: var(--primary-text-color);
@@ -47,6 +39,14 @@ body {
 
 button {
   cursor: pointer;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .subscription__button, .join__link, .modal__field-polisy, .modal__close-icon, .modal__close-button, .client-list__link, .social-team__link, .work-list__cont, .feature-list__icon, .contact-nav__contact, .main-nav {
