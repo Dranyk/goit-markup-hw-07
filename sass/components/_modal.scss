@@ -27,8 +27,6 @@ label {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    min-height: 300px;
-    min-width: 400px;
     padding: 40px;
     width: 528px;
     height: 581px;
@@ -79,17 +77,18 @@ label {
     
     color: var(--title-text-color);
 
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     margin-top: 0;
 }
 
 .modal__form-field:nth-child(-n + 4) {
-    margin-bottom: 28px;
+    margin-bottom: 10px;
 }
 
 .modal__form-field {
     display: block;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .modal__form-input {
@@ -113,7 +112,6 @@ label {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    position: absolute;
     top: 50%;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(-40px);
@@ -123,8 +121,6 @@ label {
     position: absolute;
     top: 50%;
     left: 10px;
-    transform: translateY(-50%);
-    display: inline-block;
     fill: currentColor;
     color: var(--title-text-color);
 }
@@ -132,13 +128,6 @@ label {
 .modal__comment {
     margin-bottom: 20px;
     height: 120px;
-}
-
-.modal__form-label {
-    position: absolute;
-    top: 20px;
-    left: 0px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__form-comment::placeholder {
@@ -207,6 +196,10 @@ label {
 }
 
 .modal__form-field:focus-within > .modal__form-icon {
+    fill: var(--accent-color);
+}
+
+.modal__form-field:focus-within > .modal__form-input {
     fill: var(--accent-color);
 }
 

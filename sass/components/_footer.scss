@@ -13,13 +13,6 @@ address {
     align-items: baseline;
 }
 
-.footer__adress {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    width: 1200px;
-}
-
 .footer__actual-address {
     color: white;
     font-size: 14px;
@@ -92,13 +85,11 @@ address {
 }
 
 .subscription {
-    width: 570px;
+    margin-left: 93px;
 }
 
 .subscription__form {
     display: flex;
-    flex-direction: column;
-    position: relative;
 }
 
 .subscription__join-in {
@@ -119,11 +110,13 @@ address {
     background-color: #2f303a;
     padding-left: 12px;
     color: var(--primary-text-color);
+
+    margin-right: 12px;
 }
 
 .subscription__button {
     @extend %align-list;
-    position: absolute;
+    position: relative;
     bottom: 0;
     right: 0;
     width: 200px;
